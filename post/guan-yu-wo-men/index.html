@@ -1,92 +1,139 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>关于我们 | 使用指南</title>
-<link rel="shortcut icon" href="https://conceptCloset.github.io/favicon.ico">
+<meta name="description" content="keep running">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://conceptCloset.github.io/favicon.ico?v=1555294331376">
 <link rel="stylesheet" href="https://conceptCloset.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://conceptCloset.github.io">
-  <img class="avatar" src="https://conceptCloset.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    使用指南
-  </h1>
-  <p class="site-description">
-    keep running
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/guan-yu-wo-men" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://conceptCloset.github.io">
+        <img class="avatar" src="https://conceptCloset.github.io/images/avatar.png?v=1555294331376" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://conceptCloset.github.io">
+        <h1 class="site-title">使用指南</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/guan-yu-wo-men" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              关于我们
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-01-25 ·
-              </time>
-              
-            </div>
-            <div class="post-content">
-              <p>概念衣橱是一款主打“断舍离”的电子衣橱类APP，通过概念衣橱您可以更加清晰简洁的了解您的衣橱。<br>如果您对我们有什么好的想法和建议，欢迎您联系我们，我们非常乐意能听到您的声音。</p>
-<p>新浪微博：概念衣橱App<br>微信公众号：概念衣橱<br>邮箱：<a href="mailto:conceptclosetapp@gmail.com">conceptclosetapp@gmail.com</a></p>
+          
+          <h2 class="post-title">关于我们</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-01-25</span>
+            
+          </div>
+          <div class="post-content">
+            <p>概念衣橱是一款主打“断舍离”的电子衣橱类APP，通过概念衣橱您可以更加清晰简洁的了解您的衣橱。
+如果您对我们有什么好的想法和建议，欢迎您联系我们，我们非常乐意能听到您的声音。</p>
+<p>新浪微博：概念衣橱App
+微信公众号：概念衣橱
+邮箱：conceptclosetapp@gmail.com</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-    
-        
 
         
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">keep running</div>
+  <div class="social-container">
     
-        <div class="site-footer">
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
   Powered by ConceptCloset
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
