@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://conceptCloset.github.io</id>
     <title>Concept Closet</title>
-    <updated>2020-04-01T02:02:45.500Z</updated>
+    <updated>2020-05-20T02:17:32.711Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://conceptCloset.github.io"/>
     <link rel="self" href="https://conceptCloset.github.io/atom.xml"/>
@@ -101,10 +101,8 @@
 1.通过对单品进行拼图的方式来生成搭配。<br>
 2.直接保存用户照片来生成搭配，可以对搭配照片进行单品标签的添加。<br>
 下图是两种搭配的图片效果：<br>
-<img src="https://icloset-1255590791.cos.ap-shanghai.myqcloud.com/blog-img/twoOutfit-4.png" alt="搭配效果" loading="lazy"><br>
+<img src="https://i.loli.net/2020/04/24/a5wlpZoiAeunkIY.png" alt="搭配效果" loading="lazy"><br>
 如果您需要在您原有的拼图搭配上创造一个新的搭配，那么您可以选择复制搭配拼图，再去编辑保存复制后的搭配拼图，这样不会影响到原有的拼图搭配。</p>
-<h2 id="备份篇">备份篇</h2>
-<p>目前对于Pro用户，您可以基于iCloud进行数据备份，方便您在不同的设备中同步数据。备份过程中请确保网络状态良好，并不要在备份的过程中退出备份页面。</p>
 ]]></content>
     </entry>
     <entry>

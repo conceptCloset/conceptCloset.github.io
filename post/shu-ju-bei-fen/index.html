@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>数据备份 | Concept Closet</title>
+<meta name="description" content="您的私人衣帽间，打造您的专属Style">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://conceptCloset.github.io/favicon.ico?v=1589941047198">
+<link rel="stylesheet" href="https://conceptCloset.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://conceptCloset.github.io">
+        <img class="avatar" src="https://conceptCloset.github.io/images/avatar.png?v=1589941047198" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://conceptCloset.github.io">
+        <h1 class="site-title">Concept Closet</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/guan-yu-wo-men" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">数据备份</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-02-01</span>
+            
+          </div>
+          <div class="post-content">
+            <p>目前云栖衣橱提供了两种备份方式：一种为iCloud备份，一种为WebDav网盘备份。</p>
+<h2 id="两种备份方式的优缺点">两种备份方式的优缺点</h2>
+<h3 id="icloud备份">iCloud备份</h3>
+<p>优点：</p>
+<ul>
+<li>备份数据和AppleID绑定</li>
+<li>操作简单，在iCloud设置正确的情况下可以轻松备份</li>
+<li>可以保存多份不同时间的备份数据，后期选择恢复</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>iCloud服务器有时可能不稳定</li>
+<li>数据备份可能耗时较长</li>
+<li>如果iCloud容量不够，会存在无法备份的情况</li>
+</ul>
+<h3 id="webdav网盘备份">WebDav网盘备份</h3>
+<p>优点：</p>
+<ul>
+<li>备份数据和第三方网盘绑定，可以在网页或第三方网盘的App中查看数据</li>
+<li>第三方网盘有较大的免费空间，可以存储较多数据</li>
+<li>在网络流畅的情况下，数据备份耗时很短，可以很快完成备份</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>需要注册第三方网盘的账号，并填入对应信息框中</li>
+<li>网盘备份备份成功后，云端数据和本地保持一致。不会像iCloud保存多份不同时间的备份数据，仅会保存备份的最新数据</li>
+<li>数据的备份和恢复，涉及到第三方网盘的上传和下载流量，如果操作次数过多，可能出现超出流量的现象</li>
+</ul>
+<h2 id="两种备份方式的操作方式">两种备份方式的操作方式</h2>
+<h3 id="icloud备份-2">iCloud备份</h3>
+<ol>
+<li>确保您已经开启Apple的iCloud功能，且“云栖衣橱”的使用iCloud开关已经打开，如下图所示。<br>
+<img src="https://i.loli.net/2020/04/24/U6PWT8wbnSpMsmx.jpg" alt="Jietu20200424-150808.jpg" loading="lazy"></li>
+<li>确保您的iCloud内部有足够空间。</li>
+<li>点击iCloud页面的数据备份，等待数据备份完成后再退出页面。</li>
+</ol>
+<h2 id="webdav网盘备份-2">WebDav网盘备份</h2>
+<p>在中国国内，推荐使用坚果云提供的云盘服务，云栖衣橱和坚果云没有任何利益或合作关系，仅仅是坚果云做得非常好，所以特别推荐它。</p>
+<h3 id="坚果云-webdav-账号注册及接入云栖衣橱方法">坚果云 WebDAV 账号注册及接入云栖衣橱方法</h3>
+<p>您在云栖衣橱 - 我的 - 数据备份 - WebDav备份页面中可以看到有三个配置项，分别是：<br>
+- WebDAV 网址<br>
+- WebDAV 账号<br>
+- WebDAV 密码</p>
+<p>只要正确填写这三项之后，您将自动获得启用云栖衣橱的备份功能。</p>
+<p>要获得这三项的信息，您需要<strong>注册一个坚果云账号</strong>。</p>
+<p>以下提供两种注册坚果云 WebDAV 的方法，一种是下载坚果云 iOS 版，在其应用内可得 WebDAV 三项信息，另一种是通过网页版坚果云获得 WebDAV 三项信息（如果你不想下载坚果云 iOS 版，可以使用网页）：</p>
+<p><strong>在手机版坚果云注册 WebDAV（非常简单）（坚果云备份配置方式之一）</strong><br>
+在App Store或打开这个链接即可下载坚果云 iOS 版：<br>
+https://apps.apple.com/cn/app/坚果云/id444442371</p>
+<p>下载安装后，自行注册和登录。</p>
+<p>登录后打开【设置】 功能 → 第三方应用管理，可得如图结果：<br>
+<strong>图片中红字内容：</strong><br>
+1. 点击“添加应用密码”，在打开的页面中输入：云栖衣橱。然后确定即可回到这个页面<br>
+2. 回到这个页面后，你就可以看到下面多了一个“应用密码”<br>
+3. 依次把这三项复制到云栖衣橱备份页面顶部填入即可</p>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/04/24/1Y5qTbK43pcwMeR.png" alt="Snip20200424_3.png" loading="lazy"></figure>
+<p><strong>在网页版坚果云注册 WebDAV 账号（坚果云备份配置方式之二）</strong></p>
+<blockquote>
+<p>如果你已通过《在手机版坚果云注册 WebDAV（非常简单）（坚果云备份配置方式之一）》章节配置好坚果云了，则无需再阅读以下内容，以下内容是给不想使用手机版坚果云但拥有电脑的用户阅读的。</p>
+</blockquote>
+<p>在电脑上使用浏览器打开这个注册链接：</p>
+<p>https://www.jianguoyun.com/d/signup</p>
+<p>注册后，您将进入坚果云网盘网页端，可见如下内容：<br>
+<img src="https://i.loli.net/2020/04/24/hW1dAOUzFqi6QL4.jpg" alt="Jietu20200424-142806@2x.jpg" loading="lazy"><br>
+点击右上角账户名处选择 【账户信息】，然后选择【安全选项】。</p>
+<p>在 安全选项 中找到 第三方应用管理，并选择 添加应用，输入名称如：云栖衣橱后，选择 生成密码，选择完成，您将得到类似如下内容：<br>
+<img src="https://i.loli.net/2020/04/24/M2s7q3JvWxPUpjS.jpg" alt="Jietu20200424-144401@2x.jpg" loading="lazy"></p>
+<p>其中 https://dav.jianguoyun.com/dav/ 就是您将填入云栖衣橱 WebDAV 网址 的内容；【账户：】后面的邮箱地址就是你的 WebDAV 账号；点击显示密码后得到的密码就是你的 WebDAV 密码。</p>
+<p>将以上得到的三项内容一一填入云栖衣橱中，您就可以享受云备份了。</p>
+<p>建议您通过微信或 QQ 发送 WebDAV 密码 到您手机上，再复制到云栖衣橱里，免得您手动输错密码。</p>
+<h2 id="填写密码提醒">填写密码提醒</h2>
+<p>这里填写的密码不是<strong>用户密码</strong>，而是<strong>应用密码</strong>！！！<br>
+这里填写的密码不是<strong>用户密码</strong>，而是<strong>应用密码</strong>！！！<br>
+这里填写的密码不是<strong>用户密码</strong>，而是<strong>应用密码</strong>！！！</p>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">您的私人衣帽间，打造您的专属Style</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/7006357579" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by ConceptCloset
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
