@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://conceptCloset.github.io</id>
     <title>云栖衣橱</title>
-    <updated>2020-05-20T02:21:35.691Z</updated>
+    <updated>2020-05-20T07:14:06.232Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://conceptCloset.github.io"/>
     <link rel="self" href="https://conceptCloset.github.io/atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://conceptCloset.github.io/images/avatar.png</logo>
     <icon>https://conceptCloset.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 云栖衣橱</rights>
+    <entry>
+        <title type="html"><![CDATA[网页导入]]></title>
+        <id>https://conceptCloset.github.io/post/wang-ye-dao-ru/</id>
+        <link href="https://conceptCloset.github.io/post/wang-ye-dao-ru/">
+        </link>
+        <updated>2020-05-20T02:22:27.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="导入平台">导入平台</h2>
+<p>云栖衣橱支持从多个电商网站导入单品图片，目前已经支持的平台包括淘宝，京东，苏宁，考拉海淘，拼多多，蘑菇街，普通网页等，几乎已囊括了所有的导入渠道。</p>
+<h2 id="导入方式">导入方式</h2>
+<p>绝大多数的情况下，当您获取到对应单品的链接，复制链接，回到“网页导入”页面，App会自动进行链接检测。如果检测到链接地址，会提示您选择是否“导入剪贴板的内容”，如果您选择了确定，那么会加载该链接地址，并获取对应网页上的单品图片。获取到图片后，您可以选择您心仪的图片进行导入。</p>
+<h2 id="注意事项">注意事项</h2>
+<p>绝大多数情况下，在电商的商品页面会提供分享功能，里面会存在“复制链接”。但是淘宝平台略有不同，淘宝App的“复制链接”会生成一个“淘口令”，有些时候“淘口令”是无法被加载的，为了确保您可以正常导入淘宝的单品，这里我们不推荐您复制“淘口令”，而是提供了一种更方便快捷的方式进行链接的获取，具体操作如下：</p>
+<ul>
+<li>1.进入商品详情页，长按商品名称，出现“拷贝”和“拷贝链接”选项，如下图<br>
+<img src="https://i.loli.net/2020/05/20/OVYDjfRKlWstX86.png" alt="webimport.png" loading="lazy"></li>
+<li>2.从弹出的菜单中选择“拷贝链接”</li>
+<li>3.返回网页导入页面，确认导入</li>
+</ul>
+<p>在极少数情况下，可能会出现网页正常加载成功，您想要的图片也在网页上正常显示，但是App却无法正常获取到图片，这时您可以稍微操作一下网页试试，例如</p>
+<ul>
+<li>上下左右滚动下网页</li>
+<li>点击下您想要的图片</li>
+</ul>
+<p>如果仍然无法获取到图片，您可以将链接通过“我的”-&gt;“问题反馈”，将链接发送给我们，方便我们排查问题。</p>
+<p>最后，App还存在很多问题，欢迎您给我们提供建议，❤️。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[使用条款]]></title>
         <id>https://conceptCloset.github.io/post/shi-yong-tiao-kuan/</id>
